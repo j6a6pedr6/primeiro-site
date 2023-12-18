@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "london";
+    src: url("../fonts/old_london/OldLondon.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --cor1: #DB030A;
+    --cor2: #B80208;
+    --cor3: #660104;
+    --cor4: #3D0103;
+
+    --font-padrao: Arial, Helvetica, sans-serif;
+    --font-london: "london", sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor1);
+    font-family: var(--font-padrao);
+    margin: auto;
+}
+
+header{
+    background-color: white;
+    font-family: var(--font-london);
+    text-align: center;
+    font-size: 2em;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.329);
+    
+}
+
+header > a{
+    text-decoration: none;
+    color: black;
+}
+
+header > a:hover{
+    background-color: var(--cor2);
+    color: white;
+    padding: 3px;
+    border-radius: 2px;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    padding: 5px;
+    color: white;
+}
