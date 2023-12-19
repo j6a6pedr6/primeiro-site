@@ -32,22 +32,33 @@ header{
     background-color: white;
     font-family: var(--font-london);
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
     width: 600px;
     padding: 10px;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 10px;
     border-radius: 10px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.329);
     
 }
 
-header > a{
+main{
+    background-color: white;
+    text-align: center;
+    font-size: 1.8em;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+main > a{
     text-decoration: none;
     color: black;
 }
 
-header > a:hover{
+main > a:hover{
     background-color: var(--cor2);
     color: white;
     padding: 3px;
