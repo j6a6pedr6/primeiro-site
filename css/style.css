@@ -2,16 +2,16 @@
 
 @font-face {
     font-family: "london";
-    src: url("../fonts/old_london/OldLondon.ttf") format("truetype");
+    src: url("../fonts/TexasToast.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 :root{
-    --cor1: #DB030A;
-    --cor2: #B80208;
-    --cor3: #660104;
-    --cor4: #3D0103;
+    --cor1: #FFE3BC;
+    --cor2: #E7C48C;
+    --cor3: #F29725;
+    --cor4: #BF6407;
 
     --font-padrao: Arial, Helvetica, sans-serif;
     --font-london: "london", sans-serif;
@@ -23,9 +23,10 @@
 }
 
 body{
-    background-color: var(--cor1);
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
     font-family: var(--font-padrao);
     margin: auto;
+    height: 98vh;
 }
 
 header{
@@ -33,7 +34,7 @@ header{
     font-family: var(--font-london);
     text-align: center;
     font-size: 3em;
-    width: 600px;
+    width: 60vw;
     padding: 10px;
     margin: auto;
     margin-top: 20px;
@@ -47,7 +48,7 @@ main{
     background-color: white;
     text-align: center;
     font-size: 1.8em;
-    width: 300px;
+    width: 60vw;
     padding: 10px;
     border-radius: 10px;
     margin: auto;
@@ -59,18 +60,59 @@ main > a{
 }
 
 main > a:hover{
-    background-color: var(--cor2);
+    background-color: var(--cor4);
     color: white;
     padding: 3px;
     border-radius: 2px;
 }
 
+article{
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    width: 60vw;
+    text-align: justify;
+    border-radius: 10px;
+}
+
+article > h1{
+    font-family: var(--font-london);
+    text-align: center;
+    padding: 30px;
+    font-size: 3em;
+}
+
+article > p{
+    margin-top: 2em;
+}
+
+article > p > a{
+    color: black;
+    text-decoration: none;
+    font-size: bolder;
+}
+
+article > p > a:hover{
+    text-decoration: underline;
+}
+
 footer{
-    background-color: black;
+    background-color: var(--cor4);
     text-align: center;
     bottom: 0;
     position: fixed;
     width: 100%;
     padding: 5px;
     color: white;
+}
+
+footer > p > a{
+    text-decoration: none;
+    color: white;
+    font-size: bolder;
+}
+
+footer > p > a:hover{
+    text-decoration: underline;
 }
