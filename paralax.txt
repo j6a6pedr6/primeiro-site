@@ -1,0 +1,11 @@
+.img{
+    background-attachment: fixed;
+    height: 200px;
+}
+
+section.img{
+    background-image: url('imagens/toast001.jpg');
+    background-position: center right;
+    background-size: cover;
+
+}
