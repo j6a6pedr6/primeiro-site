@@ -17,33 +17,154 @@
     --font-toast: "toast", sans-serif;
 }
 
+/* Geral*/
 *{
     margin: 0px;
     padding: 0px;
 }
 
 body{
-    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3), var(--cor3));
+    background-attachment: fixed;
     font-family: var(--font-padrao);
     height: 100vh;
 }
 
+/*Primeira pagina*/
 header{
     background-color: white;
     font-family: var(--font-toast);
+    font-size: 10vw;
     text-align: center;
     min-width: 30vw;
     max-width: 60vw;
     padding-top: 20px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 40px;
+    border-radius: 10px 10px 0px 0px;
 }
 
-main{
+nav{
     background-color: white;
-    text-decoration: none;
+    text-align: center;
     min-width: 30vw;
     max-width: 60vw;
     padding-top: 20px;
+    padding-bottom: 20px;
     margin: auto;
+    border-radius: 0px 0px 10px 10px;
+}
+
+nav > a{
+    color: black;
+    font-family: var(--font-padrao);
+    line-height: 2em;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+nav > a:hover{
+    background-color: var(--cor3);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+footer{
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    bottom: 0;
+    position: fixed;
+    width: 100vw;
+}
+
+footer > p > a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer > p > a:hover{
+    text-decoration: underline;
+}
+
+/* Paginas secundarias */
+main{
+    font-family: var(--font-padrao);
+    background-color: white;
+    min-width: 30vh;
+    max-width: 70vh;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.288);
+}
+
+main > section > h1{
+    text-align: center;
+    font-family: var(--font-toast);
+    font-size: 3em;
+    margin: 20px;
+}
+
+main > section > p{
+    text-indent: 20px;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+main > section > p > a{
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+}
+main > section > p > a:hover{
+    text-decoration: underline;
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6{
+    background-attachment: fixed;
+    height: 40vh;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.img1{
+    background-image: url(../imagens/img1.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.img2{
+    background-image: url(../imagens/img2.jpg);
+    background-position: top center;
+    background-size: cover;
+}
+
+.img3{
+    background-image: url(../imagens/img3.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.img4{
+    background-image: url(../imagens/img4.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.img5{
+    background-image: url(../imagens/img5.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.img6{
+    background-image: url(../imagens/img6.jpg);
+    background-position: center right;
+    background-size: cover;
 }
