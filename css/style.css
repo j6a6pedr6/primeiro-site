@@ -34,10 +34,10 @@ body{
 header{
     background-color: white;
     font-family: var(--font-toast);
-    font-size: 10vw;
+    font-size: 50px;
     text-align: center;
-    min-width: 30vw;
-    max-width: 60vw;
+    min-width: 300px;
+    max-width: 600px;
     padding-top: 2vh;
     margin: auto;
     margin-top: 40px;
@@ -47,8 +47,8 @@ header{
 nav{
     background-color: white;
     text-align: center;
-    min-width: 30vw;
-    max-width: 60vw;
+    min-width: 300px;
+    max-width: 600px;
     padding-top: 2vh;
     padding-bottom: 2vh;
     margin: auto;
@@ -74,7 +74,7 @@ footer{
     background-color: var(--cor4);
     color: white;
     text-align: center;
-    padding: 0.6vh;
+    padding: 6px;
     bottom: 0;
     position: fixed;
     width: 100vw;
@@ -94,12 +94,12 @@ footer > p > a:hover{
 main{
     font-family: var(--font-padrao);
     background-color: white;
-    min-width: 30vw;
-    max-width: 60vw;
+    min-width: 300px;
+    max-width: 600px;
     height: auto;
     margin: auto;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 40px; 
     padding: 10px;
     border-radius: 10px;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.288);
@@ -108,7 +108,7 @@ main{
 main > section > h1{
     text-align: center;
     font-family: var(--font-toast);
-    font-size: 10vw;
+    font-size: 50px;
     margin: 20px;
 }
 
@@ -129,7 +129,7 @@ main > section > p > a:hover{
 
 .img1, .img2, .img3, .img4, .img5, .img6{
     background-attachment: fixed;
-    height: 40vh;
+    height: 500px;
     margin: 5px;
     border-radius: 5px;
 }
